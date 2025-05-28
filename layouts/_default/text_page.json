@@ -1,0 +1,13 @@
+{{- $context := . -}}
+
+{{- $content := "" -}}
+{{- with .Content -}}
+  {{- $content = . -}}
+{{- end -}}
+
+{{- $context.Scratch.Set "mainData" (dict
+  "content" (string $content)
+  "navText" (partial "nav_text.html" $context)
+) -}}
+
+{{ $context.Scratch.Get "mainData" | jsonify }}

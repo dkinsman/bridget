@@ -10,6 +10,7 @@ nav {
   padding: 0 var(--space-standard);
 
   position: fixed;
+  // top:0;
   bottom: 0;
   background: white;
 
@@ -17,6 +18,16 @@ nav {
 
   // Maintain functionality while container is locked
   pointer-events: all;
+}
+
+nav .nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 35em; /* match about page */
+  padding: 0;
 }
 
 .num {

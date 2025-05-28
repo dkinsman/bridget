@@ -6,7 +6,7 @@ $tablet: map-get($breakpoints, 'tablet') - 1;
     top: 0;
     z-index: 0;
 
-    width: 100vw;
+    width: 100%;
     height: var(--window-height);
 
     overflow-y: scroll;

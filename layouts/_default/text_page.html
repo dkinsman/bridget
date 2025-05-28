@@ -1,0 +1,13 @@
+{{- define "main" -}}
+  <div
+    class="container"
+  >
+    {{- with .Content -}}
+      <article>
+        {{- . -}}
+      </article>
+    {{- end -}}
+
+    {{- partial "nav_text.html" . -}}
+  </div>
+{{- end -}}
